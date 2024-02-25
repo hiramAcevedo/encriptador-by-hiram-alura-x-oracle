@@ -1,3 +1,28 @@
-h1 {
-    color:brown
+* {
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #F3F5FC;
+}
+
+.logo {
+    padding: 15px 0;
+}
+
+.salidaTexto {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.123);
+}
+
+/* @media screen and (min-width:768px) {
+    body {
+        background-color: #0675eb;
+    }
+} */
+
+/* @media screen and (min-width:1440px) {
+    body {
+        background-color: #25c87f;
+    }
+} */
