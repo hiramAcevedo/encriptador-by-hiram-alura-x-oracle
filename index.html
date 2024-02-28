@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Encriptador de Texto por Hiram Acevedo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -14,19 +14,24 @@
 </header>
 
 <main>
-    <form>
-    <textarea name="IngresoTexto" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+    <textarea id="campoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+    
     <p><img src="img/Vector.png" alt="Cuidado">Solo letras minúsculas y sin acentos.</p>
-    <button>Encriptar</button>
-    <button>Desencriptar</button>
+    
+    <div class="bloqueBtn">
+    <button id="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+    <button id="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    </div>
+    
+
 
     <section class="salidaTexto">
         <div>
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <textarea id="campoSalida" class="campoSalida"></textarea>
         </div>
     </section>
-</form>
+
     
     
 </main>
@@ -35,5 +40,6 @@
 <footer>
     <p class="rodapie">Hiram Agustín Acevedo López - 2024</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
