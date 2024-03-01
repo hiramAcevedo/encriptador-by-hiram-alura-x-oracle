@@ -14,12 +14,16 @@ const matrizTextMod = [
 function btnEncriptar(){
     const textoEntrada = eventEncriptar(campoTexto.value);
     campoMensaje.value = textoEntrada;
+    campoTexto.value = "";
+    campoMensaje.style.backgroundImage = "none"
 }
 
 // Desencriptar
 function btnDesencriptar(){
     const textoEntrada = eventDesencriptar(campoTexto.value);
     campoMensaje.value = textoEntrada;
+    campoTexto.value = "";
+    campoMensaje.style.backgroundImage = "none"
 }
 
 //Encriptar

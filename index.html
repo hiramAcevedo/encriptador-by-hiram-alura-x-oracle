@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge Encriptador de Texto por Hiram Acevedo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 </head>
 <body>
 
 <header>
-    <h1 class="logo"><img src="img/Logo.png" alt="Logo de Alura"></h1>
+    <h1><img class="logo" src="img/Logo.png" alt="Logo de Alura"></h1>
 </header>
 
 <main>
 
-    <textarea id="campoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+    <section class="EntradayBtn">
     
-    <p><img src="img/Vector.png" alt="Cuidado">Solo letras minúsculas y sin acentos.</p>
-    
-    <div class="bloqueBtn">
-    <button id="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
-    <button id="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    <textarea id="campoEntrada" class="campoEntrada" placeholder="Ingrese el texto aquí" cols="30" rows="10"></textarea>
+
+    <div class="informacion-de-entrada">
+    <h6 class="info"><img src="img/Vector.png" alt="Cuidado">Solo letras minúsculas y sin acentos.</h6>
     </div>
+
+
+    <div class="bloqueBtn">
+    <button id="btnEncriptar" class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+    <button id="btnDesencriptar" class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+    </div>
+    </section>
     
 
 
     <section class="salidaTexto">
         <div>
-            <textarea id="campoSalida" class="campoSalida"></textarea>
+            <textarea id="campoSalida" class="campoSalida" cols="20" rows="10"></textarea>
+<!--             <button class="btnCopiar" id="btnCopiar">Copiar</button> -->
         </div>
     </section>
 
